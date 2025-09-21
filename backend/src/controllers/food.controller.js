@@ -1,7 +1,7 @@
-const foodModel = require('../models/food.model');
-const storageService = require('../services/storage.service');
-const likeModel = require("../models/likes.model")
-const saveModel = require("../models/save.model")
+const foodModel = require('../models/food.modle.js');
+const storageService = require('../services/storage.service.js');
+const likeModel = require("../models/like.model.js")
+const saveModel = require("../models/save.model.js")
 const { v4: uuid } = require("uuid")
 
 
@@ -51,7 +51,7 @@ async function likeFood(req, res) {
         })
 
         return res.status(200).json({
-            message: "Food unliked successfully"
+            message: "Food un-liked successfully"
         })
     }
 

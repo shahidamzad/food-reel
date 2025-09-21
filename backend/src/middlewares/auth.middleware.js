@@ -1,9 +1,9 @@
-const foodPartnerModel = require("../models/foodpartner.model")
+const foodPartnerModel = require("../models/foodpartner.modle")
 const userModel = require("../models/user.model")
 const jwt = require("jsonwebtoken");
 
 
-async function authFoodPartnerWiddleware(req, res, next) {
+async function authFoodPartnerMiddleware(req, res, next) {
 
     const token = req.cookies.token;
 
@@ -62,10 +62,9 @@ async function authUserMiddleware(req, res, next) {
 }
 
 module.exports = {
-<<<<<<< HEAD
-    authFoodPartnerWiddleware
-=======
+
+
     authFoodPartnerMiddleware,
     authUserMiddleware
->>>>>>> a961b6d (backend complete)
+
 }

@@ -16,5 +16,6 @@ async function uploadFile(file, fileName) {
 }
 
 module.exports = {
-    uploadFile
+    uploadFile,
+    imagekit
 }

@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-const express = require("express")
-const foodController = require('../controllers/food.controller')
-const authMiddleware = require('../middlewares/auth.middleware')
-const router = express.Router();
-
-
 const express = require('express');
 const foodController = require("../controllers/food.controller")
 const authMiddleware = require("../middlewares/auth.middleware")
@@ -15,18 +8,13 @@ const multer = require('multer');
 const upload = multer({
     storage: multer.memoryStorage(),
 })
->>>>>>> a961b6d (backend complete)
 
 
-<<<<<<< HEAD
-router.post('/', authMiddleware.authFoodPartnerWiddleware, foodController.createFood)
-=======
 /* POST /api/food/ [protected]*/
 router.post('/',
     authMiddleware.authFoodPartnerMiddleware,
     upload.single("mama"),
     foodController.createFood)
->>>>>>> a961b6d (backend complete)
 
 
 /* GET /api/food/ [protected] */

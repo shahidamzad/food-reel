@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import "@/styles/theme.css";
+
+/* Layout container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #f00;
+}
