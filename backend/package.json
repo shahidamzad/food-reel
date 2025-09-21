@@ -17,8 +17,15 @@
     "dotenv": "^17.2.2",
     "expess": "^0.0.1-security",
     "express": "^5.1.0",
+    "imagekit": "^6.0.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.1",
+<<<<<<< HEAD
     "nodemon": "^3.1.10"
+=======
+    "multer": "^2.0.2",
+    "nodemon": "^3.1.10",
+    "uuid": "^13.0.0"
+>>>>>>> a961b6d (backend complete)
   }
 }
