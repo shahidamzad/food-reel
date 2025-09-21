@@ -8,19 +8,12 @@ const { v4: uuid } = require("uuid")
 async function createFood(req, res) {
     const fileUploadResult = await storageService.uploadFile(req.file.buffer, uuid())
 
-<<<<<<< HEAD
-    console.log(req.foodPartner)
-        console.log(req.body);
-        
-    
-=======
     const foodItem = await foodModel.create({
         name: req.body.name,
         description: req.body.description,
         video: fileUploadResult.url,
         foodPartner: req.foodPartner._id
     })
->>>>>>> a961b6d (backend complete)
 
     res.status(201).json({
         message: "food created successfully",
